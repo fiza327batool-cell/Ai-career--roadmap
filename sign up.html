@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Career Roadmap</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #FAF8FF;
+      color: #131B2E;
+    }
+
+    .heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #4648D4, #0058BE, #6B38D4);
+    }
+
+    .gradient-text {
+      background: linear-gradient(100deg, #4648D4, #0058BE, #8B45D4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .form-input {
+      width: 100%;
+      border: 1px solid #E5E3EF;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 13px 15px;
+      font-size: 14px;
+      outline: none;
+      transition: .2s;
+      color: #131B2E;
+    }
+
+    .form-input:focus {
+      border-color: #5556D8;
+      box-shadow: 0 0 0 3px rgba(70,72,212,.10);
+    }
+
+    .primary-btn {
+      background: linear-gradient(110deg, #4648D4, #0058BE, #6B38D4);
+      transition: .25s;
+    }
+
+    .primary-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(70,72,212,.23);
+    }
+
+    .side-panel {
+      background: linear-gradient(145deg, #4648D4 0%, #315CCB 48%, #713BD0 100%);
+    }
+
+    .feature-card {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(10px);
+    }
+
+    .password-toggle {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #85859A;
+      user-select: none;
+    }
+
+    @media(max-width: 850px) {
+      .side-panel { display: none; }
+      .signup-container { padding: 30px 20px; }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 md:px-12 py-5 bg-white/80 backdrop-blur-md border-b border-purple-100">
+    <a href="index.html" class="heading text-2xl font-extrabold gradient-text">
+      CareerPath<span class="text-[#4648D4]">.</span>
+    </a>
+
+    <p class="text-sm text-gray-600">
+      Already have an account?
+      <a href="login.html" class="font-bold text-[#4648D4] hover:underline ml-1">
+        Log in
+      </a>
+    </p>
+  </nav>
+
+  <!-- Main Section -->
+  <main class="min-h-[calc(100vh-73px)] flex items-center justify-center p-5 md:p-8">
+
+    <div class="w-full max-w-6xl bg-white rounded-3xl overflow-hidden shadow-xl shadow-purple-100/60 grid md:grid-cols-2">
+
+      <!-- Left Side -->
+      <section class="side-panel text-white p-10 lg:p-14 flex flex-col justify-between min-h-[680px]">
+
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 text-sm mb-10">
+            <span class="material-symbols-outlined text-base">auto_awesome</span>
+            Your future starts here
+          </div>
+
+          <h1 class="heading text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+            Build a career<br>
+            that feels like<br>
+            <span class="text-blue-200">your own.</span>
+          </h1>
+
+          <p class="text-white/80 leading-7 max-w-md">
+            Create your account and take the first step towards a career
+            designed around your interests, skills and ambitions.
+          </p>
+        </div>
+
+        <div class="space-y-4 my-10">
+          <div class="feature-card rounded-2xl p-5 flex gap-4 items-center">
+            <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center">
+              <span class="material-symbols-outlined">explore</span>
+            </div>
+            <div>
+              <h3 class="font-bold">Discover your direction</h3>
+              <p class="text-sm text-white/70 mt-1">Explore careers that match your interests.</p>
+            </div>
+          </div>
+
+          <div class="feature-card rounded-2xl p-5 flex gap-4 items-center">
+            <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center">
+              <span class="material-symbols-outlined">route</span>
+            </div>
+            <div>
+              <h3 class="font-bold">Get a personalized roadmap</h3>
+              <p class="text-sm text-white/70 mt-1">Know what skills to learn and when.</p>
+            </div>
+          </div>
+
+          <div class="feature-card rounded-2xl p-5 flex gap-4 items-center">
+            <div class="w-11 h-11 rounded-xl bg-white/20 flex items-center justify-center">
+              <span class="material-symbols-outlined">trending_up</span>
+            </div>
+            <div>
+              <h3 class="font-bold">Track your growth</h3>
+              <p class="text-sm text-white/70 mt-1">Keep track of your learning progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-white/60">
+          Take control of your journey. One step at a time.
+        </p>
+      </section>
+
+      <!-- Right Side: Signup Form -->
+      <section class="signup-container p-8 md:p-10 lg:p-14 flex flex-col justify-center">
+
+        <div class="max-w-md w-full mx-auto">
+
+          <div class="mb-8">
+            <span class="inline-flex items-center gap-2 text-sm font-semibold text-[#4648D4] bg-indigo-50 px-3 py-2 rounded-full mb-5">
+              <span class="material-symbols-outlined text-base">person_add</span>
+              Get started for free
+            </span>
+
+            <h2 class="heading text-3xl font-extrabold text-[#131B2E]">
+              Create your account
+            </h2>
+
+            <p class="text-gray-500 text-sm mt-3 leading-6">
+              Join us and start building your personalized career roadmap.
+            </p>
+          </div>
+
+          <form id="signupForm" class="space-y-4">
+
+            <!-- Full Name -->
+            <div>
+              <label class="block text-sm font-semibold mb-2">Full Name</label>
+              <input
+                type="text"
+                id="fullName"
+                class="form-input"
+                placeholder="Enter your full name"
+                required
+                minlength="2"
+              >
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-sm font-semibold mb-2">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+
+            <!-- Password -->
+            <div>
+              <label class="block text-sm font-semibold mb-2">Password</label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-input pr-12"
+                  placeholder="Create a strong password"
+                  minlength="8"
+                  required
+                >
+                <span
+                  class="material-symbols-outlined password-toggle"
+                  onclick="togglePassword('password', this)"
+                >visibility_off</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">
+                Use at least 8 characters.
+              </p>
+            </div>
+
+            <!-- Confirm Password -->
+            <div>
+              <label class="block text-sm font-semibold mb-2">Confirm Password</label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  class="form-input pr-12"
+                  placeholder="Re-enter your password"
+                  required
+                >
+                <span
+                  class="material-symbols-outlined password-toggle"
+                  onclick="togglePassword('confirmPassword', this)"
+                >visibility_off</span>
+              </div>
+            </div>
+
+            <!-- Terms -->
+            <div class="flex items-start gap-3 pt-1">
+              <input
+                type="checkbox"
+                id="terms"
+                class="mt-1 accent-[#4648D4]"
+                required
+              >
+              <label for="terms" class="text-xs text-gray-500 leading-5">
+                I agree to the
+                <a href="#" class="text-[#4648D4] font-semibold hover:underline">Terms of Service</a>
+                and
+                <a href="#" class="text-[#4648D4] font-semibold hover:underline">Privacy Policy</a>.
+              </label>
+            </div>
+
+            <!-- Error / Success Message -->
+            <p id="message" class="text-sm hidden"></p>
+
+            <!-- Submit -->
+            <button
+              type="submit"
+              id="submitBtn"
+              class="primary-btn w-full text-white font-bold py-3.5 rounded-xl flex justify-center items-center gap-2"
+            >
+              Create Account
+              <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </button>
+
+          </form>
+
+          <div class="flex items-center gap-4 my-6">
+            <div class="h-px bg-gray-200 flex-1"></div>
+            <span class="text-xs text-gray-400">OR</span>
+            <div class="h-px bg-gray-200 flex-1"></div>
+          </div>
+
+          <p class="text-center text-sm text-gray-600">
+            Already have an account?
+            <a href="login.html" class="text-[#4648D4] font-bold hover:underline">
+              Log in
+            </a>
+          </p>
+
+          <p class="text-center text-xs text-gray-400 mt-8 leading-5">
+            Demo interface — account registration is not connected to a backend yet.
+          </p>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    // Show / Hide Password
+    function togglePassword(inputId, icon) {
+      const input = document.getElementById(inputId);
+
+      if (input.type === "password") {
+        input.type = "text";
+        icon.textContent = "visibility";
+      } else {
+        input.type = "password";
+        icon.textContent = "visibility_off";
+      }
+    }
+
+    // Signup Form Validation
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("fullName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const terms = document.getElementById("terms").checked;
+      const message = document.getElementById("message");
+      const button = document.getElementById("submitBtn");
+
+      message.classList.remove("hidden", "text-red-500", "text-green-600");
+
+      if (name.length < 2) {
+        message.textContent = "Please enter your full name.";
+        message.classList.add("text-red-500");
+        return;
+      }
+
+      if (password.length < 8) {
+        message.textContent = "Password must contain at least 8 characters.";
+        message.classList.add("text-red-500");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        message.textContent = "Passwords do not match. Please try again.";
+        message.classList.add("text-red-500");
+        return;
+      }
+
+      if (!terms) {
+        message.textContent = "Please accept the Terms of Service.";
+        message.classList.add("text-red-500");
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = "Creating Account...";
+
+      // Demo only: no backend registration is connected.
+      setTimeout(() => {
+        message.textContent = "Your details passed validation! Backend registration is not connected yet.";
+        message.classList.add("text-green-600");
+
+        button.disabled = false;
+        button.innerHTML = 'Create Account <span class="material-symbols-outlined text-lg">arrow_forward</span>';
+      }, 700);
+    });
+  </script>
+
+</body>
+</html>
