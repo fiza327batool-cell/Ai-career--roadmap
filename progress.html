@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Progress · AI Career Roadmap</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<style>
+html,body{margin:0;padding:0}
+body{overscroll-behavior:none}
+::-webkit-scrollbar{display:none}
+.ring-anim{transition:stroke-dashoffset .7s ease}
+.bar-anim{transition:height .5s ease}
+.tab-active{background:#e1e0ff;color:#4648d4}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={
+  theme:{
+    extend:{
+      colors:{
+        "error":"#ba1a1a","error-container":"#ffdad6","on-error-container":"#93000a",
+        "primary":"#4648d4","primary-container":"#6063ee","primary-fixed":"#e1e0ff",
+        "secondary":"#0058be","secondary-fixed":"#d8e2ff",
+        "tertiary":"#6b38d4","tertiary-fixed":"#e9ddff",
+        "surface":"#faf8ff","background":"#faf8ff",
+        "surface-container-lowest":"#ffffff","surface-container-low":"#f2f3ff",
+        "surface-container":"#eaedff","surface-variant":"#dae2fd",
+        "on-surface":"#131b2e","on-surface-variant":"#464554",
+        "on-primary":"#ffffff","on-tertiary":"#ffffff","on-secondary":"#ffffff",
+        "outline-variant":"#c7c4d7","outline":"#767586",
+        "amber-soft":"#fff1d6","amber-ink":"#8a5a00"
+      },
+      borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},
+      spacing:{
+        "space-md":"1rem","margin":"1.25rem","space-xs":"0.25rem","space-sm":"0.5rem",
+        "space-lg":"1.5rem","margin-desktop":"3rem","space-xl":"2.5rem","gutter":"1.5rem"
+      },
+      fontFamily:{
+        "headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],
+        "headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],
+        "body-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"label-sm":["Inter"],
+        "label-telemetry":["Inter"]
+      },
+      fontSize:{
+        "headline-lg-mobile":["2rem",{"lineHeight":"2.375rem","letterSpacing":"-0.025em","fontWeight":"700"}],
+        "headline-lg":["3rem",{"lineHeight":"3.375rem","letterSpacing":"-0.03em","fontWeight":"700"}],
+        "headline-md":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.02em","fontWeight":"600"}],
+        "headline-sm":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],
+        "body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],
+        "body-sm":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],
+        "label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],
+        "label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"600"}],
+        "label-telemetry":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"700"}]
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
+
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-20 max-w-[1280px] mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-md">
+    <a href="index.html" class="flex items-center gap-space-sm">
+      <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-secondary via-primary to-tertiary text-white flex items-center justify-center">
+        <span class="material-symbols-outlined text-[20px]">conversion_path</span>
+      </span>
+      <span class="font-headline-sm text-headline-sm tracking-tight">AI Career Roadmap</span>
+      <span class="inline-flex px-space-sm py-space-xs rounded-full bg-surface-container text-primary font-label-telemetry text-label-telemetry uppercase tracking-wider">AI</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-space-lg">
+      <a class="font-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs" href="index.html">Home</a>
+      <a class="font-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs" href="explore.html">Explore Careers</a>
+      <a class="font-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs" href="how-it-works.html">How It Works</a>
+      <a class="font-label-md text-primary px-space-sm py-space-xs" href="progress.html">My Progress</a>
+      <a class="font-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs" href="login.html">Login</a>
+    </nav>
+    <div class="flex items-center gap-space-md">
+      <a href="explore.html" class="hidden sm:inline-flex font-label-md text-on-primary bg-gradient-to-r from-primary via-primary-container to-tertiary px-space-lg py-space-sm rounded-full shadow-[0_8px_24px_-4px_rgba(99,102,241,0.35)] hover:-translate-y-0.5 transition-all">Get Started →</a>
+      <span class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+        <span class="material-symbols-outlined text-[18px]">person</span>
+      </span>
+    </div>
+  </div>
+</header>
+
+<main class="w-full pt-20 flex-grow bg-background relative overflow-hidden">
+  <div class="absolute top-10 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+  <div class="absolute top-96 right-10 w-[600px] h-[600px] bg-tertiary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+  <div class="w-full max-w-[1100px] mx-auto px-margin md:px-margin-desktop py-space-xl space-y-8">
+
+    <div class="flex flex-col items-center text-center space-y-2 mb-2">
+      <span class="px-3 py-1 rounded-full bg-surface-container text-primary font-label-telemetry text-label-telemetry uppercase tracking-widest border border-outline-variant/30">Progress</span>
+      <h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Your Learning Progress</h1>
+      <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Track your growth and see how far you've come on your career roadmap.</p>
+    </div>
+
+    <div class="max-w-2xl mx-auto p-4 rounded-2xl bg-amber-soft text-amber-ink font-label-sm text-center border border-amber-ink/10">
+      <strong>Demo data</strong> — structure is ready for a live API. Values below are sample progress for a Data Analyst roadmap.
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="p-5 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+        <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-2">Overall Progress</p>
+        <p class="font-headline-md text-headline-md text-primary" id="sumOverall">42%</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">5 of 12 tasks done</p>
+      </div>
+      <div class="p-5 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+        <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-2">Skills Acquired</p>
+        <p class="font-headline-md text-headline-md text-on-surface" id="sumSkills">8</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">From your roadmaps</p>
+      </div>
+      <div class="p-5 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+        <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-2">Completed Phases</p>
+        <p class="font-headline-md text-headline-md text-on-surface" id="sumPhases">2</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Milestones finished</p>
+      </div>
+      <div class="p-5 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+        <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-2">Active Roadmaps</p>
+        <p class="font-headline-md text-headline-md text-on-surface" id="sumRoadmaps">1</p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">In progress</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="p-6 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm flex flex-col items-center">
+        <div class="w-full mb-4">
+          <h2 class="font-headline-sm text-headline-sm text-on-surface">Overall Progress</h2>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Weighted completion across active roadmaps</p>
+        </div>
+        <div class="relative w-40 h-40 my-4">
+          <svg class="w-full h-full -rotate-90" viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#eaedff" stroke-width="10"/>
+            <circle id="progressRing" class="ring-anim" cx="60" cy="60" r="52" fill="none" stroke="#4648d4" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.73" stroke-dashoffset="326.73"/>
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span class="font-headline-md text-headline-md text-on-surface" id="ringPct">0%</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">complete</span>
+          </div>
+        </div>
+        <div class="w-full mt-2">
+          <div class="h-2.5 rounded-full bg-surface-container overflow-hidden">
+            <div id="progressBar" class="h-full rounded-full bg-gradient-to-r from-secondary via-primary to-tertiary bar-anim" style="width:0%"></div>
+          </div>
+          <p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-3" id="overallDetail">5 of 12 tasks · 2 of 3 phases</p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+        <div class="mb-4">
+          <h2 class="font-headline-sm text-headline-sm text-on-surface">Weekly Learning Activity</h2>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Minutes logged over the last 7 days</p>
+        </div>
+        <div id="weeklyChart" class="flex items-end justify-between gap-2 h-44 pt-2" role="img" aria-label="Weekly learning activity chart"></div>
+        <p class="font-label-sm text-label-sm text-on-surface-variant text-center mt-4" id="weeklySummary">—</p>
+      </div>
+    </div>
+
+    <div class="p-6 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-[0_20px_50px_-12px_rgba(19,27,46,0.08)] space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
+          <h2 class="font-headline-sm text-headline-sm text-on-surface">Roadmap Progress</h2>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Target career: <span class="text-primary font-label-md" id="careerName">Data Analyst</span></p>
+        </div>
+        <a href="roadmap.html" class="inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline">
+          Open full roadmap <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="p-4 rounded-2xl bg-surface-container-low/70 border border-outline-variant/20 text-center">
+          <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-1">Starting match</p>
+          <p class="font-headline-sm text-headline-sm text-on-surface">30%</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Skill gap baseline</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-surface-container-low/70 border border-outline-variant/20 text-center">
+          <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-1">Current completion</p>
+          <p class="font-headline-sm text-headline-sm text-primary" id="roadmapPct">42%</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tasks finished</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-surface-container-low/70 border border-outline-variant/20 text-center">
+          <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-1">Time remaining</p>
+          <p class="font-headline-sm text-headline-sm text-on-surface">14w</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">at ~8 hrs / week</p>
+        </div>
+      </div>
+      <div>
+        <p class="font-label-telemetry text-label-telemetry text-on-surface-variant uppercase tracking-widest mb-4">Roadmap sequence</p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-0" id="phaseTrack"></div>
+      </div>
+    </div>
+
+    <div class="p-6 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+      <div class="mb-5">
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">Skills Progress</h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Acquired, currently learning, and remaining skills</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-5 border-b border-outline-variant/30 pb-4" role="tablist">
+        <button type="button" data-group="acquired" class="skill-tab tab-active px-4 py-2 rounded-full font-label-md text-label-md transition-colors" role="tab" aria-selected="true">Acquired Skills</button>
+        <button type="button" data-group="learning" class="skill-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-colors" role="tab" aria-selected="false">Currently Learning</button>
+        <button type="button" data-group="remaining" class="skill-tab px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container transition-colors" role="tab" aria-selected="false">Remaining Skills</button>
+      </div>
+      <div id="skillsList" class="space-y-3"></div>
+      <p id="skillsEmpty" class="hidden font-body-sm text-body-sm text-on-surface-variant text-center py-6">No skills in this group yet.</p>
+    </div>
+
+    <div class="p-6 rounded-3xl bg-surface-container-lowest/90 border border-outline-variant/30 shadow-sm">
+      <div class="mb-5">
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">Recent Achievements</h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">Completed milestones and learning activities</p>
+      </div>
+      <div id="achievementsList" class="space-y-3"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="w-full border-t border-outline-variant/30 bg-surface-container-lowest/60 py-6 mt-auto">
+  <div class="max-w-[1280px] mx-auto px-margin md:px-margin-desktop flex flex-col sm:flex-row items-center justify-between gap-3">
+    <p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 AI Career Roadmap</p>
+    <div class="flex gap-4">
+      <a href="index.html" class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary">Home</a>
+      <a href="explore.html" class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary">Explore</a>
+      <a href="progress.html" class="font-label-sm text-label-sm text-primary">Progress</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const DEMO = {
+  overallPercent: 42,
+  skillsAcquired: 8,
+  completedPhases: 2,
+  activeRoadmaps: 1,
+  completedTasks: 5,
+  totalTasks: 12,
+  career: "Data Analyst",
+  startingMatch: 30,
+  timeLeftWeeks: 14,
+  hoursPerWeek: 8,
+  weekly: [
+    { day: "Mon", minutes: 40 },
+    { day: "Tue", minutes: 25 },
+    { day: "Wed", minutes: 75 },
+    { day: "Thu", minutes: 0 },
+    { day: "Fri", minutes: 55 },
+    { day: "Sat", minutes: 30 },
+    { day: "Sun", minutes: 20 }
+  ],
+  phases: [
+    { name: "Core Skills", status: "done" },
+    { name: "Level Up", status: "current" },
+    { name: "Projects & Job-Ready", status: "upcoming" }
+  ],
+  skills: {
+    acquired: [
+      { name: "Excel", level: "Intermediate" },
+      { name: "Statistics basics", level: "Beginner" },
+      { name: "SQL fundamentals", level: "Beginner" },
+      { name: "Data cleaning", level: "Beginner" },
+      { name: "Power BI intro", level: "Beginner" }
+    ],
+    learning: [
+      { name: "Pandas & NumPy", level: "Beginner", progress: 40 },
+      { name: "Data visualisation", level: "Beginner", progress: 15 }
+    ],
+    remaining: [
+      { name: "Dashboard storytelling", level: "—" },
+      { name: "Portfolio project", level: "—" },
+      { name: "Machine learning basics", level: "—" }
+    ]
+  },
+  achievements: [
+    { title: "Completed Core Skills phase", detail: "Data Analyst roadmap", when: "3 days ago", type: "phase", icon: "flag" },
+    { title: "Skill acquired: Power BI intro", detail: "Level Up phase", when: "Yesterday", type: "skill", icon: "military_tech" },
+    { title: "5-day learning streak", detail: "Logged activity five days in a row", when: "Today", type: "streak", icon: "local_fire_department" }
+  ]
+};
+
+const CIRC = 2 * Math.PI * 52;
+
+function setOverall(pct) {
+  const p = Math.max(0, Math.min(100, pct));
+  document.getElementById("progressRing").style.strokeDashoffset = String(CIRC - (p / 100) * CIRC);
+  document.getElementById("ringPct").textContent = p + "%";
+  document.getElementById("progressBar").style.width = p + "%";
+  document.getElementById("sumOverall").textContent = p + "%";
+  document.getElementById("roadmapPct").textContent = p + "%";
+  document.getElementById("overallDetail").textContent =
+    DEMO.completedTasks + " of " + DEMO.totalTasks + " tasks · " + DEMO.completedPhases + " of " + DEMO.phases.length + " phases";
+}
+
+function renderWeekly(data) {
+  const max = Math.max(...data.map(d => d.minutes), 1);
+  const total = data.reduce((s, d) => s + d.minutes, 0);
+  document.getElementById("weeklyChart").innerHTML = data.map(d => {
+    const h = Math.max(4, Math.round((d.minutes / max) * 100));
+    return `<div class="flex-1 flex flex-col items-center justify-end h-full min-w-0">
+      <div class="w-full max-w-[36px] rounded-t-lg bg-gradient-to-t from-primary to-tertiary bar-anim" style="height:${h}%"></div>
+      <span class="font-label-sm text-label-sm text-on-surface-variant mt-2">${d.minutes > 0 ? d.minutes + "m" : "—"}</span>
+      <span class="font-label-md text-label-md text-on-surface mt-0.5">${d.day}</span>
+    </div>`;
+  }).join("");
+  document.getElementById("weeklySummary").textContent =
+    total + " min this week · avg " + Math.round(total / data.length) + " min/day";
+}
+
+function renderPhases(phases) {
+  const statusMap = { done: "Completed", current: "In progress", upcoming: "Up next" };
+  const colors = {
+    done: "bg-primary text-on-primary border-primary",
+    current: "bg-primary-fixed text-primary border-primary shadow-[0_0_0_4px_rgba(70,72,212,0.15)]",
+    upcoming: "bg-surface-container-lowest text-on-surface-variant border-outline-variant"
+  };
+  document.getElementById("phaseTrack").innerHTML = phases.map((ph, i) => `
+    <div class="flex-1 flex sm:flex-col items-center gap-3 sm:gap-2 relative">
+      <div class="w-9 h-9 rounded-full border-2 flex items-center justify-center font-label-md text-label-md z-10 ${colors[ph.status]}">
+        ${ph.status === "done" ? '<span class="material-symbols-outlined text-[18px]">check</span>' : (i + 1)}
+      </div>
+      <div class="sm:text-center">
+        <p class="font-label-md text-label-md text-on-surface">${ph.name}</p>
+        <p class="font-label-telemetry text-label-telemetry uppercase tracking-wider ${ph.status === "upcoming" ? "text-on-surface-variant" : "text-primary"}">${statusMap[ph.status]}</p>
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderSkills(group) {
+  const list = DEMO.skills[group] || [];
+  const wrap = document.getElementById("skillsList");
+  const empty = document.getElementById("skillsEmpty");
+  wrap.innerHTML = "";
+  empty.classList.toggle("hidden", list.length > 0);
+  list.forEach(s => {
+    const bar = typeof s.progress === "number"
+      ? `<div class="mt-2 h-1.5 rounded-full bg-surface-container overflow-hidden">
+           <div class="h-full rounded-full bg-primary bar-anim" style="width:${s.progress}%"></div>
+         </div>
+         <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">${s.progress}%</p>`
+      : "";
+    wrap.innerHTML += `
+      <div class="flex items-center justify-between gap-4 p-4 rounded-2xl bg-surface-container-low/60 border border-outline-variant/20">
+        <div class="min-w-0 flex-1">
+          <p class="font-label-md text-label-md text-on-surface">${s.name}</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant">${s.level} · ${DEMO.career}</p>
+          ${bar}
+        </div>
+        <span class="material-symbols-outlined text-primary text-[22px] shrink-0">${group === "acquired" ? "check_circle" : group === "learning" ? "pending" : "radio_button_unchecked"}</span>
+      </div>`;
+  });
+}
+
+function renderAchievements(items) {
+  const typeColor = {
+    phase: "bg-primary-fixed text-primary",
+    skill: "bg-secondary-fixed text-secondary",
+    streak: "bg-amber-soft text-amber-ink"
+  };
+  document.getElementById("achievementsList").innerHTML = items.map(a => `
+    <div class="flex flex-wrap items-start justify-between gap-3 p-4 rounded-2xl bg-surface-container-low/60 border border-outline-variant/20">
+      <div class="flex items-start gap-3 min-w-0">
+        <span class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+          <span class="material-symbols-outlined">${a.icon}</span>
+        </span>
+        <div>
+          <p class="font-label-md text-label-md text-on-surface">${a.title}</p>
+          <p class="font-label-sm text-label-sm text-on-surface-variant">${a.detail}</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-end gap-1">
+        <span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm ${typeColor[a.type] || "bg-surface-container text-on-surface-variant"}">${a.type}</span>
+        <time class="font-label-sm text-label-sm text-on-surface-variant">${a.when}</time>
+      </div>
+    </div>
+  `).join("");
+}
+
+document.querySelectorAll(".skill-tab").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".skill-tab").forEach(b => {
+      b.classList.remove("tab-active");
+      b.classList.add("text-on-surface-variant");
+      b.setAttribute("aria-selected", "false");
+    });
+    btn.classList.add("tab-active");
+    btn.classList.remove("text-on-surface-variant");
+    btn.setAttribute("aria-selected", "true");
+    renderSkills(btn.dataset.group);
+  });
+});
+
+document.getElementById("sumSkills").textContent = DEMO.skillsAcquired;
+document.getElementById("sumPhases").textContent = DEMO.completedPhases;
+document.getElementById("sumRoadmaps").textContent = DEMO.activeRoadmaps;
+document.getElementById("careerName").textContent = DEMO.career;
+setOverall(DEMO.overallPercent);
+renderWeekly(DEMO.weekly);
+renderPhases(DEMO.phases);
+renderSkills("acquired");
+renderAchievements(DEMO.achievements);
+</script>
+</body>
+</html>
